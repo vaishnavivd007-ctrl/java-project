@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Book</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>📒 Contact Book</h1>
+            <p>Manage your contacts easily!</p>
+        </header>
+
+        <section class="contact-form">
+            <h2 id="formTitle">Add New Contact</h2>
+
+            <form id="contactForm">
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter full name"
+                    required
+                >
+
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="Enter phone number"
+                    pattern="[0-9+() -]{7,20}"
+                    required
+                >
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter email address"
+                >
+
+                <div class="buttons">
+                    <button type="submit" id="submitBtn">
+                        Add Contact
+                    </button>
+
+                    <button
+                        type="button"
+                        id="cancelBtn"
+                        class="cancel-btn"
+                        hidden
+                    >
+                        Cancel
+                    </button>
+                </div>
+
+            </form>
+        </section>
+
+        <section class="contact-list">
+
+            <h2>My Contacts</h2>
+
+            <input
+                type="search"
+                id="search"
+                placeholder="🔍 Search by name or phone..."
+            >
+
+            <p id="contactCount">Total Contacts: 0</p>
+
+            <div id="contactsContainer"></div>
+
+            <p id="emptyMessage">
+                No contacts found. Add your first contact!
+            </p>
+
+        </section>
+
+        <footer>
+            <p>Contact Book Project | HTML, CSS & JavaScript</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

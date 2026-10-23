@@ -1,0 +1,223 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #e0c3fc, #8ec5fc);
+    min-height: 100vh;
+    padding: 30px 15px;
+    color: #333;
+}
+
+.container {
+    max-width: 750px;
+    margin: auto;
+    background: white;
+    border-radius: 18px;
+    padding: 30px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #6c3fc5;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #777;
+    font-size: 15px;
+}
+
+/* Section Headings */
+h2 {
+    color: #6c3fc5;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+/* Contact Form */
+.contact-form {
+    background: #f8f5ff;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+form input,
+#search {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+}
+
+form input:focus,
+#search:focus {
+    border-color: #8b5cf6;
+    box-shadow: 0 0 5px rgba(139, 92, 246, 0.2);
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+button {
+    border: none;
+    padding: 12px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#submitBtn {
+    background: #7c4dff;
+    color: white;
+}
+
+#submitBtn:hover {
+    background: #6036d8;
+}
+
+.cancel-btn {
+    background: #ddd;
+    color: #333;
+}
+
+.cancel-btn:hover {
+    background: #bbb;
+}
+
+/* Contact List */
+.contact-list h2 {
+    margin-bottom: 20px;
+}
+
+#contactCount {
+    color: #777;
+    margin: 5px 0 18px;
+    font-size: 14px;
+}
+
+/* Individual Contact Card */
+.contact-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 18px;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    background: #fff;
+    transition: 0.3s;
+}
+
+.contact-card:hover {
+    background: #faf8ff;
+    border-color: #d6c7ff;
+}
+
+.contact-info {
+    flex: 1;
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+.contact-info h3 {
+    color: #4a2c91;
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+.contact-info p {
+    color: #666;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+/* Contact Action Buttons */
+.contact-actions {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.edit-btn {
+    background: #2196f3;
+    color: white;
+}
+
+.edit-btn:hover {
+    background: #0b7dda;
+}
+
+.delete-btn {
+    background: #ff5252;
+    color: white;
+}
+
+.delete-btn:hover {
+    background: #e53935;
+}
+
+/* Empty Message */
+#emptyMessage {
+    text-align: center;
+    color: #999;
+    padding: 25px 10px;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    color: #999;
+    font-size: 13px;
+    margin-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .container {
+        padding: 18px;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    .contact-form {
+        padding: 18px;
+    }
+
+    .contact-card {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .contact-actions {
+        width: 100%;
+    }
+}
